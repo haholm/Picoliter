@@ -1,0 +1,12 @@
+[build]
+target="thumbv6m-none-eabi"
+
+[target.thumbv6m-none-eabi]
+runner = 'arm-none-eabi-gdb'
+
+rustflags = [
+  "-C", "link-arg=-Tlink.x",
+
+  # fixes `rust-lld: error: undefined symbol: _defmt_timestamp` and defmt.prim .vector_table errors
+  "-C", "link-arg=-Tdefmt.x",
+]
