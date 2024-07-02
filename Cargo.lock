@@ -332,16 +332,6 @@ dependencies = [
 ]
 
 [[package]]
-name = "panic-probe"
-version = "0.3.2"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "4047d9235d1423d66cc97da7d07eddb54d4f154d6c13805c6d0793956f4f25b0"
-dependencies = [
- "cortex-m",
- "defmt",
-]
-
-[[package]]
 name = "paste"
 version = "1.0.15"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -358,7 +348,6 @@ dependencies = [
  "embedded-hal 1.0.0",
  "fugit",
  "num-traits",
- "panic-probe",
  "rp-pico",
  "usb-device",
  "usbd-serial",
